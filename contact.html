@@ -10,18 +10,17 @@
     <link class="oswald" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body>    
     <header class="heading-banner">
         <h1>Neve Hawkes</h1>
         <nav class="topnav">
-            <a href="index.html">About</a>
-            <a href="index.html">Projects</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-  <main>
+  <main class="contactmain">
     <section id="contact">
       <h2>Contact Me</h2>
       <p>If you’d like to reach out, feel free to use the form below or connect with me on GitHub.</p>
@@ -40,15 +39,20 @@
         <button id="submit" type="submit">Send Message</button>
       </form>
 
+      <div id="form-message" style="display: none; font-family: 'Work Sans', sans-serif; font-size: 1.2rem; color: green; margin-top: 20px;">
+  Thank you for your message! I'll get back to you soon.
+</div>
+
+
       <!-- Social Links -->
       <div class="social-links">
-        <p>GitHub: <a href="https://github.com/nevehawkes" target="_blank">github.com/nevehawkes</a></p>
+        <p id="gitlink">GitHub: <a href="https://github.com/nevehawkes" target="_blank">github.com/nevehawkes</a></p>
       </div>
     </section>
   </main>
-
   <footer>
-    <p>&copy; Neve Hawkes 2025</p>
-  </footer>
+        <p> Neve Hawkes <br> 2025<br>&copy;</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

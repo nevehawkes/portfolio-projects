@@ -4,63 +4,85 @@ html {
     margin: 0%;
 }
 
-body{
-    background-color: #e7d9d9;
-    
-}
-
-h1 {
-    font-size: 3rem;
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    color: #ffffff;
-}
-
-/* Header Banner */
+/* Header Banner - fixed slim bar */
 .heading-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #7d4646; /* solid background */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 2rem;
-    background-color: #7d4646b7;
-    margin: 0;
-    flex-direction: column;
-    width: 100%;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-/* Navigation */
+/* Name on left */
+/* Header Banner - fixed slim bar */
+.heading-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #7d4646;
+    display: flex;
+    justify-content: space-between; /* name left, nav right */
+    align-items: center;
+    padding: 0.75rem 2rem;
+    box-sizing: border-box; /* makes padding behave */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Name on left */
+.heading-banner h1 {
+    font-size: 2rem;
+    font-family: 'Oswald', Arial, sans-serif;
+    color: #fff;
+    margin: 0; /* remove default h1 margins */
+}
+
+/* Nav on right */
 .topnav {
     display: flex;
-    gap: 2rem;
-    font-size: 1.5rem;
-    background-color: #592e2eb7;
-    width: 100%;
-    justify-content:space-around;
-    padding: 0.5rem 0;
-    flex-wrap: wrap; /* helps when screen is small */
-    
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
+/* Nav links */
 .topnav a {
     color: #e2e1f7;
-    text-align: center;
-    padding: 14px 20px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     transition: all 0.3s ease;
-
+    cursor: pointer;
 }
 
 .topnav a:hover {
-    background-color: rgb(236, 204, 210);
-    color: rgb(126, 80, 16);
-    font-weight: bold;
+    color: #ffb347;
+    transform: scale(1.05);
 }
 
 .topnav a.active {
-    border-bottom: 3px solid #ff4081; /* accent underline */
-    font-weight: bold;
+    border-bottom: 2px solid #ff4081;
     color: #ff4081;
 }
+
+
+/* Body padding so content doesn't hide under fixed nav */
+body {
+    background-color: #e7d9d9;
+    padding-top: 80px; /* adjust to header height */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
+}
+
 
 
 /*about me*/
@@ -196,7 +218,20 @@ footer {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    position: relative;
+    margin-top: auto;
 }
+
+footer p {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem; /* or your desired size */
+    color: white; /* optional for visibility */
+    margin: 0;
+}
+
 
 /*Contact*/
 label {
@@ -235,4 +270,42 @@ label {
 a{
     color: #070540;
     cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main {
+    flex: 1; /* pushes footer down */
+    padding-top: 80px; /* same height as header */
+
+}
+
+
+#form-message {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #d2f8d2;
+    border: 1px solid #78c378;
+    color: #2d662d;
+    font-weight: 600;
+}
+
+.contactmain {
+    margin-left: 25px;
+}
+
+#gitlink{
+    background-color: #d9c2ca;
+    width: min-content;
+    border: #7d4646b7 solid 1px;
+    padding: 5px;
+    box-shadow: #7d4646 2px 4px;
+    font-weight: bolder;
 }
