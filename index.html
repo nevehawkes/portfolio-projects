@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neve Hawkes | Portfolio</title>
+    <link class="abril" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link class="work-sans" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link class="merriweather" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link class="oswald" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <header>
+    <header class="heading-banner">
         <h1>Neve Hawkes</h1>
-        <nav>
+        <nav class="topnav">
             <a href="#about">About</a>
             <a href="'#projects">Projects</a>
             <a href="contact.html">Contact</a>
@@ -18,9 +22,13 @@
     </header>
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>Hello and welcome to my portfolio. I am a training web developer passionate about building websites which are well designed, functional, and accessible. I will be showcasing some of my projects I have built alongside my codecademy course.</p>
             <img src="media/aboutme.jpeg" alt="Photo of Neve Hawkes" class="about-img">
+            <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello and welcome to my portfolio. I am a training web developer passionate about building websites which are well designed, functional, and accessible.
+                I will be showcasing some of my projects I have built alongside my codecademy course. First, a bit about me... I am 21 years old and from Devon, England.
+             My current goal is to complete the full-stack developer course traineeship I am enrolled in. Once I complete this and become qualified, I will begin my dream career. This portfolio shows two projects I have created through codecademy. As I progress, my work will improve and the projects will become more impressive!</p>
+            </div>
         </section>
 
         <section id="projects">
@@ -34,6 +42,7 @@
                 <li>Learned how to apply responsive design principles and organize content in a visually appealing way.</li>
             </ul>
             <img src="media/flexbox-img.jpg" alt="Photo of my website for flex-box business website" class="project-img">
+            <img src="media/flexbox-img-2.jpg" alt="Photo of my website for flex-box business website" class="project-img">
             </div>
             <div class="project-card">
             <h3>Number Guesser Game</h3>
@@ -44,13 +53,14 @@
                 <li>Gained experience with DOM manipulation, event handling, and updating the UI in response to user input.</li>
             </ul>
             <img src="media/numguess-img.jpg" alt="Photo of my website for number guesser website" class="project-img">
+            <img src="media/numguess-img1.jpg" alt="Photo of my website for number guesser website" class="project-img">
 
             </div>
         </section>
 
     </main>
     <footer>
-        <p>&copy; Neve Hawkes 2025</p>
+        <p> Neve Hawkes <br> 2025<br>&copy;</p>
     </footer>
     <script src="script.js"></script>
 </body>
