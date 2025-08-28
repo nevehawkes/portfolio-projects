@@ -31,3 +31,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+//nightmode
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('theme-toggle');
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        document.querySelector('header').classList.add('dark-mode');
+        document.querySelector('footer').classList.add('dark-mode');
+        toggleBtn.textContent = '☀️ Light Mode';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelector('footer').classList.toggle('dark-mode');
+
+        // Save preference
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+        // Update button
+        toggleBtn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+});
