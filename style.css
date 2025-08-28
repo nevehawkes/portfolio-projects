@@ -6,6 +6,7 @@ html {
 
 body{
     background-color: #e7d9d9;
+    
 }
 
 h1 {
@@ -42,7 +43,7 @@ h1 {
 .topnav a {
     color: #e2e1f7;
     text-align: center;
-    padding: 14px 0;
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 1.2rem;
     transition: all 0.3s ease;
@@ -53,13 +54,14 @@ h1 {
     background-color: rgb(236, 204, 210);
     color: rgb(126, 80, 16);
     font-weight: bold;
-    padding: 25px, 25px, 25px, 25px;
 }
 
 .topnav a.active {
-    text-decoration: underline;
+    border-bottom: 3px solid #ff4081; /* accent underline */
     font-weight: bold;
+    color: #ff4081;
 }
+
 
 /*about me*/
 
@@ -89,14 +91,14 @@ h1 {
     justify-content: center;
 }
 
-.about-text h2 {
+h2 {
     font-family: 'Merriweather','Courier New', Courier, monospace;
     font-size: 2.5rem;
     color: #070540;
     margin-bottom: 15px;
 }
 
-.about-text p {
+ p {
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -192,7 +194,45 @@ footer {
     background-color: #7d4646b7;
     padding: 10px;
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
+}
 
+/*Contact*/
+label {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+#submit {
+    background-color: #ecdde3;
+    color: #411b1b;
+        font-family: 'Work Sans', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#submit:hover {
+    background-color: #d9c2ca;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+#submit:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+
+a{
+    color: #070540;
+    cursor: pointer;
 }
